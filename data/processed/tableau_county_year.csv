@@ -1,0 +1,49 @@
+fips,county_name,year,median_income_2024usd,poverty_rate,rent_burden_rate,bachelors_plus_rate,broadband_rate,uninsured_rate,unemployment_rate,barrier_index,barrier_rank,barrier_tier
+24001,Allegany County,2019,56310.33,16.55,51.43,18.89,75.45,4.8,5.3,0.95,3,High barriers
+24003,Anne Arundel County,2019,123678.3,5.79,46.94,41.75,90.96,4.4,3.0,-0.82,23,Low barriers
+24005,Baltimore County,2019,94313.94,9.05,49.46,39.36,86.27,5.2,3.6,-0.22,13,Medium barriers
+24510,Baltimore city,2019,61814.61,21.21,51.18,31.91,74.48,6.6,4.6,0.99,2,High barriers
+24009,Calvert County,2019,134126.14,4.61,49.51,32.41,90.15,3.9,3.1,-0.74,20,Low barriers
+24011,Caroline County,2019,71948.34,13.88,51.04,18.41,80.13,5.6,3.7,0.53,7,High barriers
+24013,Carroll County,2019,118734.75,5.21,48.03,36.38,86.68,2.9,2.8,-0.79,22,Low barriers
+24015,Cecil County,2019,94339.71,9.79,51.19,23.93,84.48,4.1,3.9,0.02,12,Medium barriers
+24017,Charles County,2019,122702.84,6.33,49.57,28.94,87.48,3.8,3.4,-0.5,16,Medium barriers
+24019,Dorchester County,2019,64928.72,15.81,55.31,21.16,77.11,5.4,4.5,0.86,4,High barriers
+24021,Frederick County,2019,119913.89,6.84,47.86,41.4,88.8,4.5,2.8,-0.71,19,Low barriers
+24023,Garrett County,2019,64560.62,10.4,38.1,20.94,76.91,7.0,4.5,0.42,9,Medium barriers
+24025,Harford County,2019,109382.62,7.18,47.93,36.7,88.56,3.4,3.2,-0.63,18,Low barriers
+24027,Howard County,2019,148662.31,5.0,43.44,62.56,93.85,3.9,2.8,-1.46,24,Low barriers
+24029,Kent County,2019,71899.26,11.52,57.44,35.13,74.6,5.2,4.0,0.55,6,High barriers
+24031,Montgomery County,2019,133521.23,6.83,50.6,58.86,91.86,7.1,2.7,-0.77,21,Low barriers
+24033,Prince George's County,2019,104196.13,8.48,51.33,33.08,87.16,10.1,3.5,0.27,11,Medium barriers
+24035,Queen Anne's County,2019,119059.91,5.75,48.17,36.46,86.72,4.8,3.0,-0.57,17,Low barriers
+24039,Somerset County,2019,46383.96,21.67,67.35,14.43,73.71,5.8,5.4,1.76,1,High barriers
+24037,St. Mary's County,2019,110239.06,8.08,42.56,31.89,83.54,5.1,3.1,-0.43,15,Medium barriers
+24041,Talbot County,2019,90241.55,8.66,50.95,40.58,86.12,4.3,3.5,-0.28,14,Medium barriers
+24043,Washington County,2019,74674.71,12.25,43.8,21.93,78.19,5.7,3.8,0.31,10,Medium barriers
+24045,Wicomico County,2019,69884.54,15.39,54.31,27.23,80.46,6.6,4.3,0.73,5,High barriers
+24047,Worcester County,2019,77912.74,9.05,50.13,29.05,82.74,4.9,6.8,0.52,8,High barriers
+24001,Allegany County,2024,59603.0,16.85,43.55,21.09,84.88,3.8,4.7,0.82,4,High barriers
+24003,Anne Arundel County,2024,124911.0,5.64,47.16,45.76,95.51,4.7,2.8,-0.85,22,Low barriers
+24005,Baltimore County,2024,91768.0,9.78,54.18,42.32,91.4,5.4,3.3,0.02,12,Medium barriers
+24510,Baltimore city,2024,62177.0,19.75,53.68,36.14,85.37,5.9,4.3,1.06,1,High barriers
+24009,Calvert County,2024,133922.0,3.87,47.72,37.02,93.59,3.0,2.8,-0.9,23,Low barriers
+24011,Caroline County,2024,68457.0,12.16,55.78,16.23,88.29,7.3,3.2,0.82,5,High barriers
+24013,Carroll County,2024,118211.0,5.21,49.12,40.69,92.49,2.9,2.5,-0.82,21,Low barriers
+24015,Cecil County,2024,92007.0,10.85,49.58,27.98,91.32,3.6,3.5,0.01,13,Medium barriers
+24017,Charles County,2024,122816.0,6.87,46.4,33.47,93.38,4.6,3.3,-0.49,16,Medium barriers
+24019,Dorchester County,2024,61839.0,17.14,56.0,19.36,85.85,5.5,3.7,1.05,2,High barriers
+24021,Frederick County,2024,122002.0,6.0,48.47,45.79,93.16,4.7,2.7,-0.73,20,Low barriers
+24023,Garrett County,2024,67688.0,11.25,35.01,25.91,82.98,6.2,3.6,0.28,11,Medium barriers
+24025,Harford County,2024,112265.0,7.14,48.88,40.33,92.62,3.6,2.9,-0.58,17,Low barriers
+24027,Howard County,2024,149763.0,5.23,47.7,64.46,96.64,4.2,2.7,-1.31,24,Low barriers
+24029,Kent County,2024,80147.0,9.66,59.63,39.58,85.02,6.1,3.6,0.62,6,High barriers
+24031,Montgomery County,2024,132450.0,7.45,51.64,60.61,95.73,7.0,2.8,-0.71,19,Low barriers
+24033,Prince George's County,2024,101798.0,10.84,52.95,36.68,93.8,11.4,3.4,0.44,8,High barriers
+24035,Queen Anne's County,2024,112826.0,6.44,54.38,37.98,89.97,5.7,2.6,-0.24,15,Medium barriers
+24039,Somerset County,2024,64943.0,16.36,48.48,19.39,83.4,3.6,4.2,0.85,3,High barriers
+24037,St. Mary's County,2024,119446.0,7.98,45.74,36.47,93.07,3.9,2.9,-0.62,18,Low barriers
+24041,Talbot County,2024,84811.0,9.33,51.53,42.0,90.09,3.9,3.4,-0.08,14,Medium barriers
+24043,Washington County,2024,77747.0,12.42,46.92,24.14,88.54,6.3,3.5,0.41,10,Medium barriers
+24045,Wicomico County,2024,76210.0,13.94,49.96,29.48,89.74,6.7,3.6,0.51,7,High barriers
+24047,Worcester County,2024,81745.0,9.94,55.32,35.27,91.17,5.0,4.4,0.43,9,Medium barriers
