@@ -1,0 +1,1554 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20263.26.1022.1645                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='0f162f0db4ad5e531165322e0327729c7649fcac2de2282809c9166eeec6e855' _.fcp.WorkbookFingerprinting.true...creator-author-id='0f162f0db4ad5e531165322e0327729c7649fcac2de2282809c9166eeec6e855' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='4be471f022a5799db1e6da2a782c7f53b8e096a8373021603d999f513794eeee' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='4be471f022a5799db1e6da2a782c7f53b8e096a8373021603d999f513794eeee' original-version='18.1' source-build='2026.3.0 (20263.26.1022.1645)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='MarylandMobilityExplorer' path='/workbooks' revision='1.2' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tableau_county_change' inline='true' name='federated.1j8edpq1m58e9b1ds7hxo0cqv7o6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_county_change' name='textscan.0wf3i6q1fyjyaa1123bwq1go9zx3'>
+            <connection class='textscan' directory='/Users/swetha/Documents/maryland-mobility-explorer/data/processed' filename='tableau_county_change.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0wf3i6q1fyjyaa1123bwq1go9zx3' name='tableau_county_change.csv' table='[tableau_county_change#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='fips' ordinal='0' />
+            <column datatype='string' name='county_name' ordinal='1' />
+            <column datatype='real' name='income_2019' ordinal='2' />
+            <column datatype='real' name='income_2024' ordinal='3' />
+            <column datatype='real' name='income_change_pct' ordinal='4' />
+            <column datatype='real' name='rent_burden_2019' ordinal='5' />
+            <column datatype='real' name='rent_burden_2024' ordinal='6' />
+            <column datatype='real' name='rent_burden_change_pts' ordinal='7' />
+            <column datatype='real' name='poverty_change_pts' ordinal='8' />
+            <column datatype='real' name='unemployment_change_pts' ordinal='9' />
+            <column datatype='real' name='uninsured_change_pts' ordinal='10' />
+            <column datatype='real' name='broadband_change_pts' ordinal='11' />
+            <column datatype='real' name='bachelors_change_pts' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_county_change.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fips</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fips]</local-name>
+            <parent-name>[tableau_county_change.csv]</parent-name>
+            <remote-alias>fips</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[county_name]</local-name>
+            <parent-name>[tableau_county_change.csv]</parent-name>
+            <remote-alias>county_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>income_2019</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[income_2019]</local-name>
+            <parent-name>[tableau_county_change.csv]</parent-name>
+            <remote-alias>income_2019</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>income_2024</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[income_2024]</local-name>
+            <parent-name>[tableau_county_change.csv]</parent-name>
+            <remote-alias>income_2024</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>income_change_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[income_change_pct]</local-name>
+            <parent-name>[tableau_county_change.csv]</parent-name>
+            <remote-alias>income_change_pct</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rent_burden_2019</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rent_burden_2019]</local-name>
+            <parent-name>[tableau_county_change.csv]</parent-name>
+            <remote-alias>rent_burden_2019</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rent_burden_2024</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rent_burden_2024]</local-name>
+            <parent-name>[tableau_county_change.csv]</parent-name>
+            <remote-alias>rent_burden_2024</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rent_burden_change_pts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rent_burden_change_pts]</local-name>
+            <parent-name>[tableau_county_change.csv]</parent-name>
+            <remote-alias>rent_burden_change_pts</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>poverty_change_pts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[poverty_change_pts]</local-name>
+            <parent-name>[tableau_county_change.csv]</parent-name>
+            <remote-alias>poverty_change_pts</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unemployment_change_pts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unemployment_change_pts]</local-name>
+            <parent-name>[tableau_county_change.csv]</parent-name>
+            <remote-alias>unemployment_change_pts</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uninsured_change_pts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[uninsured_change_pts]</local-name>
+            <parent-name>[tableau_county_change.csv]</parent-name>
+            <remote-alias>uninsured_change_pts</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>broadband_change_pts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[broadband_change_pts]</local-name>
+            <parent-name>[tableau_county_change.csv]</parent-name>
+            <remote-alias>broadband_change_pts</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bachelors_change_pts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bachelors_change_pts]</local-name>
+            <parent-name>[tableau_county_change.csv]</parent-name>
+            <remote-alias>bachelors_change_pts</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Squeezed' datatype='string' name='[Calculation_2819075664687106]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [income_change_pct] &lt; 0 AND [rent_burden_change_pts] &gt; 0&#10;   THEN &quot;Squeezed&quot; ELSE &quot;Not squeezed&quot; END' />
+      </column>
+      <column caption='tableau_county_change.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_county_change.csv_CC3AA295A12C42219F87A0CB7D07FC89]' role='measure' type='quantitative' />
+      <column caption='Bachelors Change Pts' datatype='real' name='[bachelors_change_pts]' role='measure' type='quantitative' />
+      <column caption='Broadband Change Pts' datatype='real' name='[broadband_change_pts]' role='measure' type='quantitative' />
+      <column caption='County Name' datatype='string' name='[county_name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Fips' datatype='string' default-role='measure' default-type='quantitative' name='[fips]' role='dimension' type='nominal' />
+      <column caption='Income 2019' datatype='real' name='[income_2019]' role='measure' type='quantitative' />
+      <column caption='Income 2024' datatype='real' name='[income_2024]' role='measure' type='quantitative' />
+      <column caption='Income Change Pct' datatype='real' name='[income_change_pct]' role='measure' type='quantitative' />
+      <column caption='Poverty Change Pts' datatype='real' name='[poverty_change_pts]' role='measure' type='quantitative' />
+      <column caption='Rent Burden 2019' datatype='real' name='[rent_burden_2019]' role='measure' type='quantitative' />
+      <column caption='Rent Burden 2024' datatype='real' name='[rent_burden_2024]' role='measure' type='quantitative' />
+      <column caption='Rent Burden Change Pts' datatype='real' name='[rent_burden_change_pts]' role='measure' type='quantitative' />
+      <column caption='Unemployment Change Pts' datatype='real' name='[unemployment_change_pts]' role='measure' type='quantitative' />
+      <column caption='Uninsured Change Pts' datatype='real' name='[uninsured_change_pts]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_2819075664687106]' derivation='None' name='[none:Calculation_2819075664687106:nk]' pivot='key' type='nominal' />
+      <group caption='Action (County Name)' hidden='true' name='[Action (County Name)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[county_name]' />
+        </groupfilter>
+      </group>
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/#TableauTemp_0e3tmki1ioucau1a3fyc20kxwd52.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>fips</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fips]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fips</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tableau_county_change.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>county_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[county_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>county_name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tableau_county_change.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>income_2019</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[income_2019]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>income_2019</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tableau_county_change.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>income_2024</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[income_2024]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>income_2024</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tableau_county_change.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>income_change_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[income_change_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>income_change_pct</remote-alias>
+              <ordinal>4</ordinal>
+              <family>tableau_county_change.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rent_burden_2019</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rent_burden_2019]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rent_burden_2019</remote-alias>
+              <ordinal>5</ordinal>
+              <family>tableau_county_change.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rent_burden_2024</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rent_burden_2024]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rent_burden_2024</remote-alias>
+              <ordinal>6</ordinal>
+              <family>tableau_county_change.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rent_burden_change_pts</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rent_burden_change_pts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rent_burden_change_pts</remote-alias>
+              <ordinal>7</ordinal>
+              <family>tableau_county_change.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>poverty_change_pts</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[poverty_change_pts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>poverty_change_pts</remote-alias>
+              <ordinal>8</ordinal>
+              <family>tableau_county_change.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>unemployment_change_pts</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[unemployment_change_pts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>unemployment_change_pts</remote-alias>
+              <ordinal>9</ordinal>
+              <family>tableau_county_change.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>uninsured_change_pts</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[uninsured_change_pts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>uninsured_change_pts</remote-alias>
+              <ordinal>10</ordinal>
+              <family>tableau_county_change.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>broadband_change_pts</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[broadband_change_pts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>broadband_change_pts</remote-alias>
+              <ordinal>11</ordinal>
+              <family>tableau_county_change.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bachelors_change_pts</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[bachelors_change_pts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bachelors_change_pts</remote-alias>
+              <ordinal>12</ordinal>
+              <family>tableau_county_change.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_2819075664687106:nk]' type='palette'>
+            <map to='#bab2ae'>
+              <bucket>&quot;Not squeezed&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Squeezed&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='tableau_county_change.csv' id='tableau_county_change.csv_CC3AA295A12C42219F87A0CB7D07FC89'>
+            <properties context=''>
+              <relation connection='textscan.0wf3i6q1fyjyaa1123bwq1go9zx3' name='tableau_county_change.csv' table='[tableau_county_change#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='fips' ordinal='0' />
+                  <column datatype='string' name='county_name' ordinal='1' />
+                  <column datatype='real' name='income_2019' ordinal='2' />
+                  <column datatype='real' name='income_2024' ordinal='3' />
+                  <column datatype='real' name='income_change_pct' ordinal='4' />
+                  <column datatype='real' name='rent_burden_2019' ordinal='5' />
+                  <column datatype='real' name='rent_burden_2024' ordinal='6' />
+                  <column datatype='real' name='rent_burden_change_pts' ordinal='7' />
+                  <column datatype='real' name='poverty_change_pts' ordinal='8' />
+                  <column datatype='real' name='unemployment_change_pts' ordinal='9' />
+                  <column datatype='real' name='uninsured_change_pts' ordinal='10' />
+                  <column datatype='real' name='broadband_change_pts' ordinal='11' />
+                  <column datatype='real' name='bachelors_change_pts' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='tableau_county_year' inline='true' name='federated.1kteact0c1b6u919dqk8s029ai8r' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_county_year' name='textscan.0p5m0f11p6k8jd1gqfzf81mltdgv'>
+            <connection class='textscan' directory='/Users/swetha/Documents/maryland-mobility-explorer/data/processed' filename='tableau_county_year.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0p5m0f11p6k8jd1gqfzf81mltdgv' name='tableau_county_year.csv' table='[tableau_county_year#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='fips' ordinal='0' />
+            <column datatype='string' name='county_name' ordinal='1' />
+            <column datatype='integer' name='year' ordinal='2' />
+            <column datatype='real' name='median_income_2024usd' ordinal='3' />
+            <column datatype='real' name='poverty_rate' ordinal='4' />
+            <column datatype='real' name='rent_burden_rate' ordinal='5' />
+            <column datatype='real' name='bachelors_plus_rate' ordinal='6' />
+            <column datatype='real' name='broadband_rate' ordinal='7' />
+            <column datatype='real' name='uninsured_rate' ordinal='8' />
+            <column datatype='real' name='unemployment_rate' ordinal='9' />
+            <column datatype='real' name='barrier_index' ordinal='10' />
+            <column datatype='integer' name='barrier_rank' ordinal='11' />
+            <column datatype='string' name='barrier_tier' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_county_year.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fips</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fips]</local-name>
+            <parent-name>[tableau_county_year.csv]</parent-name>
+            <remote-alias>fips</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[county_name]</local-name>
+            <parent-name>[tableau_county_year.csv]</parent-name>
+            <remote-alias>county_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[tableau_county_year.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>median_income_2024usd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[median_income_2024usd]</local-name>
+            <parent-name>[tableau_county_year.csv]</parent-name>
+            <remote-alias>median_income_2024usd</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>poverty_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[poverty_rate]</local-name>
+            <parent-name>[tableau_county_year.csv]</parent-name>
+            <remote-alias>poverty_rate</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rent_burden_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rent_burden_rate]</local-name>
+            <parent-name>[tableau_county_year.csv]</parent-name>
+            <remote-alias>rent_burden_rate</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bachelors_plus_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bachelors_plus_rate]</local-name>
+            <parent-name>[tableau_county_year.csv]</parent-name>
+            <remote-alias>bachelors_plus_rate</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>broadband_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[broadband_rate]</local-name>
+            <parent-name>[tableau_county_year.csv]</parent-name>
+            <remote-alias>broadband_rate</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uninsured_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[uninsured_rate]</local-name>
+            <parent-name>[tableau_county_year.csv]</parent-name>
+            <remote-alias>uninsured_rate</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unemployment_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unemployment_rate]</local-name>
+            <parent-name>[tableau_county_year.csv]</parent-name>
+            <remote-alias>unemployment_rate</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>barrier_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[barrier_index]</local-name>
+            <parent-name>[tableau_county_year.csv]</parent-name>
+            <remote-alias>barrier_index</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>barrier_rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[barrier_rank]</local-name>
+            <parent-name>[tableau_county_year.csv]</parent-name>
+            <remote-alias>barrier_rank</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>barrier_tier</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[barrier_tier]</local-name>
+            <parent-name>[tableau_county_year.csv]</parent-name>
+            <remote-alias>barrier_tier</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='State' datatype='string' name='[Calculation_2819074008559616]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <calculation class='tableau' formula='&quot;Maryland&quot;' />
+      </column>
+      <column caption='tableau_county_year.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_county_year.csv_BAF38C0B361049DA83BD4BBBD734BF8B]' role='measure' type='quantitative' />
+      <column caption='Bachelors Plus Rate' datatype='real' name='[bachelors_plus_rate]' role='measure' type='quantitative' />
+      <column caption='Barrier Index' datatype='real' name='[barrier_index]' role='measure' type='quantitative' />
+      <column caption='Barrier Rank' datatype='integer' name='[barrier_rank]' role='measure' type='quantitative' />
+      <column caption='Barrier Tier' datatype='string' name='[barrier_tier]' role='dimension' type='nominal' />
+      <column caption='Broadband Rate' datatype='real' name='[broadband_rate]' role='measure' type='quantitative' />
+      <column caption='County Name' datatype='string' name='[county_name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Fips' datatype='string' default-role='measure' default-type='quantitative' name='[fips]' role='dimension' type='nominal' />
+      <column caption='Median Income 2024Usd' datatype='real' name='[median_income_2024usd]' role='measure' type='quantitative' />
+      <column caption='Poverty Rate' datatype='real' name='[poverty_rate]' role='measure' type='quantitative' />
+      <column caption='Rent Burden Rate' datatype='real' name='[rent_burden_rate]' role='measure' type='quantitative' />
+      <column caption='Unemployment Rate' datatype='real' name='[unemployment_rate]' role='measure' type='quantitative' />
+      <column caption='Uninsured Rate' datatype='real' name='[uninsured_rate]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+      <column-instance column='[barrier_tier]' derivation='None' name='[none:barrier_tier:nk]' pivot='key' type='nominal' />
+      <group caption='Action (State,County Name)' hidden='true' name='[Action (State,County Name)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_2819074008559616]' />
+          <groupfilter function='level-members' level='[county_name]' />
+        </groupfilter>
+      </group>
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/#TableauTemp_131fqr01l24wsi16khxuc1xge2ie.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>fips</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fips]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fips</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tableau_county_year.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>county_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[county_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>county_name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tableau_county_year.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tableau_county_year.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>median_income_2024usd</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[median_income_2024usd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>median_income_2024usd</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tableau_county_year.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>poverty_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[poverty_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>poverty_rate</remote-alias>
+              <ordinal>4</ordinal>
+              <family>tableau_county_year.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rent_burden_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rent_burden_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rent_burden_rate</remote-alias>
+              <ordinal>5</ordinal>
+              <family>tableau_county_year.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bachelors_plus_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[bachelors_plus_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bachelors_plus_rate</remote-alias>
+              <ordinal>6</ordinal>
+              <family>tableau_county_year.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>broadband_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[broadband_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>broadband_rate</remote-alias>
+              <ordinal>7</ordinal>
+              <family>tableau_county_year.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>uninsured_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[uninsured_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>uninsured_rate</remote-alias>
+              <ordinal>8</ordinal>
+              <family>tableau_county_year.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>unemployment_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[unemployment_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>unemployment_rate</remote-alias>
+              <ordinal>9</ordinal>
+              <family>tableau_county_year.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>barrier_index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[barrier_index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>barrier_index</remote-alias>
+              <ordinal>10</ordinal>
+              <family>tableau_county_year.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>barrier_rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[barrier_rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>barrier_rank</remote-alias>
+              <ordinal>11</ordinal>
+              <family>tableau_county_year.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>barrier_tier</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[barrier_tier]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>barrier_tier</remote-alias>
+              <ordinal>12</ordinal>
+              <family>tableau_county_year.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:barrier_tier:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;High barriers&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Medium barriers&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Low barriers&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='tableau_county_year.csv' id='tableau_county_year.csv_BAF38C0B361049DA83BD4BBBD734BF8B'>
+            <properties context=''>
+              <relation connection='textscan.0p5m0f11p6k8jd1gqfzf81mltdgv' name='tableau_county_year.csv' table='[tableau_county_year#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='fips' ordinal='0' />
+                  <column datatype='string' name='county_name' ordinal='1' />
+                  <column datatype='integer' name='year' ordinal='2' />
+                  <column datatype='real' name='median_income_2024usd' ordinal='3' />
+                  <column datatype='real' name='poverty_rate' ordinal='4' />
+                  <column datatype='real' name='rent_burden_rate' ordinal='5' />
+                  <column datatype='real' name='bachelors_plus_rate' ordinal='6' />
+                  <column datatype='real' name='broadband_rate' ordinal='7' />
+                  <column datatype='real' name='uninsured_rate' ordinal='8' />
+                  <column datatype='real' name='unemployment_rate' ordinal='9' />
+                  <column datatype='real' name='barrier_index' ordinal='10' />
+                  <column datatype='integer' name='barrier_rank' ordinal='11' />
+                  <column datatype='string' name='barrier_tier' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.1kteact0c1b6u919dqk8s029ai8r'>
+      <datasources>
+        <datasource caption='tableau_county_year' name='federated.1kteact0c1b6u919dqk8s029ai8r' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1kteact0c1b6u919dqk8s029ai8r'>
+        <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+        <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1kteact0c1b6u919dqk8s029ai8r].[none:year:ok]'>
+        <groupfilter function='member' level='[none:year:ok]' member='2024' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_15919A0A78F440129A279706CAC93092]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Maryland Mobility Explorer' type='sheet' worksheet='Map' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Maryland Mobility Explorer' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Housing Squeeze - &quot;8 Countiessaw rent burden rise while real income fell&quot;'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_county_change' name='federated.1j8edpq1m58e9b1ds7hxo0cqv7o6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1j8edpq1m58e9b1ds7hxo0cqv7o6'>
+            <column caption='Squeezed' datatype='string' name='[Calculation_2819075664687106]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [income_change_pct] &lt; 0 AND [rent_burden_change_pts] &gt; 0&#10;   THEN &quot;Squeezed&quot; ELSE &quot;Not squeezed&quot; END' />
+            </column>
+            <column caption='County Name' datatype='string' name='[county_name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Income Change Pct' datatype='real' name='[income_change_pct]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_2819075664687106]' derivation='None' name='[none:Calculation_2819075664687106:nk]' pivot='key' type='nominal' />
+            <column-instance column='[county_name]' derivation='None' name='[none:county_name:nk]' pivot='key' type='nominal' />
+            <column caption='Rent Burden Change Pts' datatype='real' name='[rent_burden_change_pts]' role='measure' type='quantitative' />
+            <column-instance column='[income_change_pct]' derivation='Sum' name='[sum:income_change_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[rent_burden_change_pts]' derivation='Sum' name='[sum:rent_burden_change_pts:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1j8edpq1m58e9b1ds7hxo0cqv7o6].[Action (County Name)]'>
+            <groupfilter function='level-members' level='[county_name]' user:ui-action-filter='[Action1_15919A0A78F440129A279706CAC93092]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1j8edpq1m58e9b1ds7hxo0cqv7o6].[Action (County Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1j8edpq1m58e9b1ds7hxo0cqv7o6].[none:Calculation_2819075664687106:nk]' />
+              <text column='[federated.1j8edpq1m58e9b1ds7hxo0cqv7o6].[none:county_name:nk]' />
+              <lod column='[federated.1j8edpq1m58e9b1ds7hxo0cqv7o6].[none:county_name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1j8edpq1m58e9b1ds7hxo0cqv7o6].[sum:income_change_pct:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='none' scope='per-table' value='0.0' value-column='[federated.1j8edpq1m58e9b1ds7hxo0cqv7o6].[sum:income_change_pct:qk]' z-order='1' />
+            <reference-line axis-column='[federated.1j8edpq1m58e9b1ds7hxo0cqv7o6].[sum:income_change_pct:qk]' enable-instant-analytics='true' formula='constant' id='refline1' label-type='none' scope='per-table' value='0.0' value-column='[federated.1j8edpq1m58e9b1ds7hxo0cqv7o6].[sum:income_change_pct:qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1j8edpq1m58e9b1ds7hxo0cqv7o6].[sum:rent_burden_change_pts:qk]</rows>
+        <cols>[federated.1j8edpq1m58e9b1ds7hxo0cqv7o6].[sum:income_change_pct:qk]</cols>
+      </table>
+      <simple-id uuid='{A2D4AB0B-D369-43BA-84AA-F3D7F17B937C}' />
+    </worksheet>
+    <worksheet name='Indicators'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_county_year' name='federated.1kteact0c1b6u919dqk8s029ai8r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kteact0c1b6u919dqk8s029ai8r'>
+            <column caption='State' datatype='string' name='[Calculation_2819074008559616]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <calculation class='tableau' formula='&quot;Maryland&quot;' />
+            </column>
+            <column caption='Bachelors Plus Rate' datatype='real' name='[bachelors_plus_rate]' role='measure' type='quantitative' />
+            <column caption='Barrier Index' datatype='real' name='[barrier_index]' role='measure' type='quantitative' />
+            <column caption='Broadband Rate' datatype='real' name='[broadband_rate]' role='measure' type='quantitative' />
+            <column caption='County Name' datatype='string' name='[county_name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Median Income 2024Usd' datatype='real' name='[median_income_2024usd]' role='measure' type='quantitative' />
+            <column-instance column='[county_name]' derivation='None' name='[none:county_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Poverty Rate' datatype='real' name='[poverty_rate]' role='measure' type='quantitative' />
+            <column caption='Rent Burden Rate' datatype='real' name='[rent_burden_rate]' role='measure' type='quantitative' />
+            <column-instance column='[bachelors_plus_rate]' derivation='Sum' name='[sum:bachelors_plus_rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[barrier_index]' derivation='Sum' name='[sum:barrier_index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[broadband_rate]' derivation='Sum' name='[sum:broadband_rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[median_income_2024usd]' derivation='Sum' name='[sum:median_income_2024usd:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[poverty_rate]' derivation='Sum' name='[sum:poverty_rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[rent_burden_rate]' derivation='Sum' name='[sum:rent_burden_rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[unemployment_rate]' derivation='Sum' name='[sum:unemployment_rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[uninsured_rate]' derivation='Sum' name='[sum:uninsured_rate:qk]' pivot='key' type='quantitative' />
+            <column caption='Unemployment Rate' datatype='real' name='[unemployment_rate]' role='measure' type='quantitative' />
+            <column caption='Uninsured Rate' datatype='real' name='[uninsured_rate]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1kteact0c1b6u919dqk8s029ai8r].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1kteact0c1b6u919dqk8s029ai8r].[sum:bachelors_plus_rate:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1kteact0c1b6u919dqk8s029ai8r].[sum:barrier_index:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1kteact0c1b6u919dqk8s029ai8r].[sum:broadband_rate:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1kteact0c1b6u919dqk8s029ai8r].[sum:median_income_2024usd:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1kteact0c1b6u919dqk8s029ai8r].[sum:poverty_rate:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1kteact0c1b6u919dqk8s029ai8r].[sum:rent_burden_rate:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1kteact0c1b6u919dqk8s029ai8r].[sum:unemployment_rate:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1kteact0c1b6u919dqk8s029ai8r].[sum:uninsured_rate:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1kteact0c1b6u919dqk8s029ai8r].[Action (State,County Name)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_15919A0A78F440129A279706CAC93092]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_2819074008559616]' />
+              <groupfilter function='level-members' level='[county_name]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1kteact0c1b6u919dqk8s029ai8r].[:Measure Names]</column>
+            <column>[federated.1kteact0c1b6u919dqk8s029ai8r].[none:year:ok]</column>
+            <column>[federated.1kteact0c1b6u919dqk8s029ai8r].[Action (State,County Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1kteact0c1b6u919dqk8s029ai8r].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1kteact0c1b6u919dqk8s029ai8r].[none:county_name:nk]</rows>
+        <cols>[federated.1kteact0c1b6u919dqk8s029ai8r].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{010A0308-990C-4DA2-A1B9-051CFF5C17DF}' />
+    </worksheet>
+    <worksheet name='Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_county_year' name='federated.1kteact0c1b6u919dqk8s029ai8r' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1kteact0c1b6u919dqk8s029ai8r'>
+            <column caption='State' datatype='string' name='[Calculation_2819074008559616]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <calculation class='tableau' formula='&quot;Maryland&quot;' />
+            </column>
+            <column-instance column='[barrier_tier]' derivation='Attribute' name='[attr:barrier_tier:nk]' pivot='key' type='nominal' />
+            <column caption='Barrier Index' datatype='real' name='[barrier_index]' role='measure' type='quantitative' />
+            <column caption='Barrier Tier' datatype='string' name='[barrier_tier]' role='dimension' type='nominal' />
+            <column caption='County Name' datatype='string' name='[county_name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[Calculation_2819074008559616]' derivation='None' name='[none:Calculation_2819074008559616:nk]' pivot='key' type='nominal' />
+            <column-instance column='[county_name]' derivation='None' name='[none:county_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[barrier_index]' derivation='Sum' name='[sum:barrier_index:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1kteact0c1b6u919dqk8s029ai8r].[none:year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0.0' field='[federated.1kteact0c1b6u919dqk8s029ai8r].[sum:barrier_index:qk]' palette='red_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1kteact0c1b6u919dqk8s029ai8r].[sum:barrier_index:qk]' />
+              <lod column='[federated.1kteact0c1b6u919dqk8s029ai8r].[none:Calculation_2819074008559616:nk]' />
+              <lod column='[federated.1kteact0c1b6u919dqk8s029ai8r].[none:county_name:nk]' />
+              <tooltip column='[federated.1kteact0c1b6u919dqk8s029ai8r].[attr:barrier_tier:nk]' />
+              <geometry column='[federated.1kteact0c1b6u919dqk8s029ai8r].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.1kteact0c1b6u919dqk8s029ai8r].[none:county_name:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Barrier Index:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1kteact0c1b6u919dqk8s029ai8r].[sum:barrier_index:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Tier:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1kteact0c1b6u919dqk8s029ai8r].[attr:barrier_tier:nk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.1kteact0c1b6u919dqk8s029ai8r].[Latitude (generated)]</rows>
+        <cols>[federated.1kteact0c1b6u919dqk8s029ai8r].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{0EAB713B-AE9B-4B8E-AB1D-4B28476C0032}' />
+    </worksheet>
+    <worksheet name='Ranking'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_county_year' name='federated.1kteact0c1b6u919dqk8s029ai8r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kteact0c1b6u919dqk8s029ai8r'>
+            <column caption='State' datatype='string' name='[Calculation_2819074008559616]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <calculation class='tableau' formula='&quot;Maryland&quot;' />
+            </column>
+            <column caption='Barrier Index' datatype='real' name='[barrier_index]' role='measure' type='quantitative' />
+            <column caption='Barrier Tier' datatype='string' name='[barrier_tier]' role='dimension' type='nominal' />
+            <column caption='County Name' datatype='string' name='[county_name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[barrier_tier]' derivation='None' name='[none:barrier_tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[county_name]' derivation='None' name='[none:county_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[barrier_index]' derivation='Sum' name='[sum:barrier_index:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1kteact0c1b6u919dqk8s029ai8r].[Action (State,County Name)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_15919A0A78F440129A279706CAC93092]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_2819074008559616]' />
+              <groupfilter function='level-members' level='[county_name]' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1kteact0c1b6u919dqk8s029ai8r].[none:county_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1kteact0c1b6u919dqk8s029ai8r].[sum:barrier_index:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1kteact0c1b6u919dqk8s029ai8r].[none:year:ok]</column>
+            <column>[federated.1kteact0c1b6u919dqk8s029ai8r].[Action (State,County Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1kteact0c1b6u919dqk8s029ai8r].[none:barrier_tier:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1kteact0c1b6u919dqk8s029ai8r].[none:county_name:nk]</rows>
+        <cols>[federated.1kteact0c1b6u919dqk8s029ai8r].[sum:barrier_index:qk]</cols>
+      </table>
+      <simple-id uuid='{606F42DB-38DF-47DE-BBC1-AF7486F31E9E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Maryland Mobility Explorer'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Where is economic mobility hardest in Maryland?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='900' maxwidth='1200' minheight='900' minwidth='1200' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='tableau_county_year' name='federated.1kteact0c1b6u919dqk8s029ai8r' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1kteact0c1b6u919dqk8s029ai8r'>
+        <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+        <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='94667' id='10' param='horz' type-v2='layout-flow' w='98666' x='667' y='889'>
+            <zone h='94667' id='5' param='vert' type-v2='layout-flow' w='85333' x='667' y='889'>
+              <zone h='4667' id='7' type-v2='title' w='85333' x='667' y='889'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='90000' id='6' type-v2='layout-basic' w='85333' x='667' y='5556'>
+                <zone h='44999' id='8' name='Map' w='42667' x='667' y='5556'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='44999' id='13' name='Ranking' w='42666' x='43334' y='5556'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='45001' id='15' name='Housing Squeeze - &quot;8 Countiessaw rent burden rise while real income fell&quot;' w='42667' x='667' y='50555'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='45001' id='16' name='Indicators' w='42666' x='43334' y='50555'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='94667' id='9' is-fixed='true' param='vert' type-v2='layout-flow' w='13333' x='86000' y='889'>
+              <zone h='9889' id='11' mode='radiolist' name='Map' param='[federated.1kteact0c1b6u919dqk8s029ai8r].[none:year:ok]' type-v2='filter' w='13333' x='86000' y='889'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7222' id='12' name='Map' pane-specification-id='0' param='[federated.1kteact0c1b6u919dqk8s029ai8r].[sum:barrier_index:qk]' type-v2='color' w='13333' x='86000' y='10778'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9556' id='14' name='Ranking' pane-specification-id='0' param='[federated.1kteact0c1b6u919dqk8s029ai8r].[none:barrier_tier:nk]' type-v2='color' w='13333' x='86000' y='18000'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='3555' id='17' type-v2='text' w='98666' x='667' y='95556'>
+            <formatted-text>
+              <run fontcolor='#000000' fontname='Benton Sans Book'>Data: U.S. Census Bureau ACS 5-year estimates (2015–2019, 2020–2024); BLS Local Area Unemployment Statistics. Income adjusted to 2024 dollars (CPI-U). Built by Swetha Sree Madan Mohan</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#444444' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#444444' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>Where is economic mobility hardest in Maryland?</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1500' minheight='1500' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='24' param='vert' type-v2='layout-flow' w='98666' x='667' y='889'>
+                <zone h='4667' id='7' type-v2='title' w='85333' x='667' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9889' id='11' mode='dropdown' name='Map' param='[federated.1kteact0c1b6u919dqk8s029ai8r].[none:year:ok]' type-v2='filter' w='13333' x='86000' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44999' id='8' is-fixed='true' name='Map' w='42667' x='667' y='5556'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7222' id='12' name='Map' pane-specification-id='0' param='[federated.1kteact0c1b6u919dqk8s029ai8r].[sum:barrier_index:qk]' type-v2='color' w='13333' x='86000' y='10778'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44999' id='13' is-fixed='true' name='Ranking' w='42666' x='43334' y='5556'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9556' id='14' name='Ranking' pane-specification-id='0' param='[federated.1kteact0c1b6u919dqk8s029ai8r].[none:barrier_tier:nk]' type-v2='color' w='13333' x='86000' y='18000'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45001' id='15' is-fixed='true' name='Housing Squeeze - &quot;8 Countiessaw rent burden rise while real income fell&quot;' w='42667' x='667' y='50555'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45001' id='16' is-fixed='true' name='Indicators' w='42666' x='43334' y='50555'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3555' id='17' type-v2='text' w='98666' x='667' y='95556'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'>Data: U.S. Census Bureau ACS 5-year estimates (2015–2019, 2020–2024); BLS Local Area Unemployment Statistics. Income adjusted to 2024 dollars (CPI-U). Built by Swetha Sree Madan Mohan</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#444444' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9E173CB2-0A3B-4F81-A263-6DF217C77AF1}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='radiolist' param='[federated.1kteact0c1b6u919dqk8s029ai8r].[none:year:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1kteact0c1b6u919dqk8s029ai8r].[sum:barrier_index:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2AF455A1-C068-4252-B2D2-C90ED863177F}' />
+    </window>
+    <window class='worksheet' name='Ranking'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1kteact0c1b6u919dqk8s029ai8r].[none:barrier_tier:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2AF8EF93-EA78-4980-AF23-788E16597917}' />
+    </window>
+    <window class='worksheet' name='Indicators'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BF807000-DF5C-49F8-A9CB-1C11BD705A9C}' />
+    </window>
+    <window class='worksheet' name='Housing Squeeze - &quot;8 Countiessaw rent burden rise while real income fell&quot;'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1j8edpq1m58e9b1ds7hxo0cqv7o6].[none:Calculation_2819075664687106:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7734A7BF-AED1-4524-A53F-4224F2CD5B45}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Maryland Mobility Explorer'>
+      <viewpoints>
+        <viewpoint name='Housing Squeeze - &quot;8 Countiessaw rent burden rise while real income fell&quot;'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Indicators' />
+        <viewpoint name='Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Ranking' />
+      </viewpoints>
+      <active id='8' />
+      <simple-id uuid='{71290052-2BA1-44F1-9D39-887528F2F156}' />
+    </window>
+  </windows>
+</workbook>
